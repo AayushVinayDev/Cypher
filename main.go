@@ -8,6 +8,7 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/AayushVinayDev/search-engine/routes"
 	"github.com/gofiber/fiber/v2"
 	"github.com/joho/godotenv"
 )
@@ -28,6 +29,7 @@ func main() {
 		IdleTimeout: 5 * time.Second,
 	})
 	//app.Use(Compress.New())
+	routes.SetRoutes(app)
 
 	go func() {
 		if err := app.Listen(port); err != nil {
