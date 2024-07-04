@@ -2,7 +2,10 @@ module github.com/AayushVinayDev/search-engine
 
 go 1.22.2
 
-require github.com/gofiber/fiber/v2 v2.52.5
+require (
+	github.com/a-h/templ v0.2.731
+	github.com/gofiber/fiber/v2 v2.52.5
+)
 
 require (
 	github.com/google/uuid v1.5.0 // indirect
@@ -11,7 +14,7 @@ require (
 )
 
 require (
-	github.com/andybalholm/brotli v1.0.5 // indirect
+	github.com/andybalholm/brotli v1.1.0 // indirect
 	github.com/joho/godotenv v1.5.1
 	github.com/klauspost/compress v1.17.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
@@ -19,5 +22,5 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.51.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
-	golang.org/x/sys v0.15.0 // indirect
+	golang.org/x/sys v0.19.0 // indirect
 )
