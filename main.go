@@ -8,6 +8,7 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/AayushVinayDev/search-engine/db"
 	"github.com/AayushVinayDev/search-engine/routes"
 	"github.com/gofiber/fiber/v2"
 	"github.com/joho/godotenv"
@@ -29,6 +30,7 @@ func main() {
 		IdleTimeout: 5 * time.Second,
 	})
 	//app.Use(Compress.New())
+	db.InitDB()
 	routes.SetRoutes(app)
 
 	go func() {
